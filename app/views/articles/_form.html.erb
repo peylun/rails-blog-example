@@ -1,13 +1,4 @@
-<% if @article.errors.any? %>
-<h4>
-  Unable to save the article:
-</h4>
-<ul>
-<% @article.errors.full_messages.each do |msg| %>
-  <li><%= msg %></li>
-<% end %>
-</ul>
-<% end %>
+<%= render 'shared/errors', obj: @article %>
 
 <div class="container-fluid">
   <div class="row">
