@@ -64,4 +64,16 @@ body {
       list-style: none;
     }
   }
+  
+  .description-well {
+    background-color: #f1f6fb;
+    box-shadow: none;
+  }
+  .article-actions {
+    border-top: 1x solid #eaeaea;
+    padding-top: 5px;
+  }
+  .description {
+    margin-top: 0;
+  }
 }
