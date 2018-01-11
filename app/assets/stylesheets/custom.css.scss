@@ -76,4 +76,17 @@ body {
   .description {
     margin-top: 0;
   }
+  
+  .article-title {
+    font-weight: bold;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 5px;
+    
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .article-body {
+    padding: 15px 0;
+  }
 }
