@@ -79,7 +79,6 @@ body {
   
   .article-title {
     font-weight: bold;
-    border-bottom: 1px solid #eaeaea;
     padding-bottom: 5px;
     
     a:hover {
@@ -88,5 +87,9 @@ body {
   }
   .article-body {
     padding: 15px 0;
+  }
+  .article-meta-details {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 5px;
   }
 }
