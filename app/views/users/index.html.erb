@@ -2,6 +2,8 @@
   All Users
 </h3>
 <div align="center">
+  <%= will_paginate %>
+  
   <div class="container">
   <% @users.each do |user| %>
     <div class="row">
@@ -15,4 +17,6 @@
     </div>
   <% end %>
   </div>
+  
+  <%= will_paginate %>
 </div>
