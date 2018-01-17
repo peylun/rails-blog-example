@@ -3,10 +3,12 @@
 </h3>
 <div class="container-fluid">
   <div class="well description-well col-xs-12">
-    <h4 class="center description">
-      <strong>Description:</strong>
-    </h4>
-    <hr>
+    <% if @article.user %>
+      <ul class="listing center">
+        <li class="article-title"><%= link_to gravatar_for(@article.user, size: 20), user_path(@article.user) %> <%= link_to @article.user.username, user_path(@article.user) %></li>
+      </ul>
+      <hr>
+    <% end %>
     <%= simple_format(@article.description) %>
     <div class="article-actions">
       <%= link_to 'Edit this article', edit_article_path(@article), class: "btn btn-primary btn-xs" %>
