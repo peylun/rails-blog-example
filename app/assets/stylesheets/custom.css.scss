@@ -97,4 +97,12 @@ body {
     list-style: none;
     padding-left: 0;
   }
+  
+  .container-user-listing {
+    .listing {
+      .btn-danger {
+        margin-top: 15px;
+      }
+    }
+  }
 }
