@@ -12,6 +12,9 @@
         <div class="well well-sm">
           <div class="article-title">
             <%= link_to category.name, category_path(category) %>
+            <% if category.articles.any? %>
+              &nbsp;(<%= pluralize(category.articles.count, "article") %>)
+            <% end %>
           </div>
         </div>
       </div>

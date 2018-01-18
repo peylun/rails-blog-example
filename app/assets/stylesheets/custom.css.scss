@@ -105,4 +105,19 @@ body {
       }
     }
   }
+  
+  .badge {
+    background-color: #b7d5ec;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    
+    + .badge {
+      margin-left: 5px;  
+    }
+  }
+  
+  .input_checkbox input {
+    width: auto !important;
+  }
 }
